@@ -1,0 +1,41 @@
+/* Estilos para la tabla2*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #120e0e;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4cacaf;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #7ede7e;
+}
+
+tr:hover {
+    background-color: #dddddd;
+}
+
+/* Estilos para la galería de imágenes */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+}

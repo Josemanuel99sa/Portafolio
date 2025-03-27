@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Conversor de Unidades</h2>
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" onchange="actualizarUnidades()">
+            <option value="temperatura">Temperatura</option>
+            <option value="distancia">Distancia</option>
+            <option value="tiempo">Tiempo</option>
+            <option value="moneda">Moneda</option>
+        </select>
+        
+        <input type="number" id="valor-origen" placeholder="Ingrese un valor">
+       
+        <label for="unidad-origen">De:</label>
+        <select id="unidad-origen"></select>
+       
+        
+        <label for="unidad-destino">A:</label>
+        <select id="unidad-destino"></select>
+        
+        <button onclick="convertir()">Convertir</button>
+        <h3 id="resultado"></h3>
+
+        <div class="back-to-index">
+            <a href="../Indice.html" class="btn">Volver al Índice</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+
+
+</html>

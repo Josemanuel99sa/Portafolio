@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario y Tabla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de Datos para ver el interes de los alumnos en universidades</h1>
+    <form id="dataForm">
+        <label for="text">Nombre:</label>
+        <input type="text" id="text" name="text"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Universidad:</label>
+        <input type="checkbox" id="checkbox1" name="checkbox" value="UNAM"> UNAM
+        <input type="checkbox" id="checkbox2" name="checkbox" value="Anahuac"> Anahuac
+        <input type="checkbox" id="checkbox3" name="checkbox" value="Politecnico"> Politecnico<br><br>
+
+        <label>Genero:</label>
+        <input type="radio" id="radio1" name="radio" value="Hombre"> Hombre
+        <input type="radio" id="radio2" name="radio" value="Mujer"> Mujer
+        <input type="radio" id="radio3" name="radio" value="Otro"> Otro<br><br>
+
+        <label for="datetime">Fecha y Hora:</label>
+        <input type="datetime-local" id="datetime" name="datetime"><br><br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="range">Rango de interes:</label>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+        <button type="button" onclick="validateAndAddRow()">Agregar a la Tabla</button>
+    </form>
+    <div class="back-to-index">
+        <a href="../Indice.html" class="btn">Volver al Índice</a>
+    </div>
+
+    <h2>Tabla de Datos</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Universidad</th>
+                <th>Genero</th>
+                <th>Fecha y Hora</th>
+                <th>Color</th>
+                <th>Rango</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
